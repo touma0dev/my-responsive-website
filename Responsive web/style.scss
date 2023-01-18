@@ -1,0 +1,91 @@
+@use 'mixin';
+*{
+    margin: 0;
+    padding: 0;
+}
+//media port
+
+//preset-massive-scale
+
+:root{
+    --font:black;
+    --back:orange;
+    --hover:#f5f5f5;
+}
+li,a{
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+  color: var(--hover);
+}
+
+//menu
+.navbar{
+    @include mixin.flex-center;
+    justify-content: space-around;
+    background-color: var(--back);
+ 
+    #menu{
+      display: none;
+    }
+    @include mixin.respond-to('small'){
+
+      .navbar{
+        &-menu{
+          display: none;
+      }
+       &-btn{
+        display: block;
+        align-items: center;
+        margin-right: 30px;
+        position: relative;
+
+      }&-menu-togle{
+        position: absolute;
+        display: flex;
+        width: fit-content;
+        height: 100px;
+        left: -34pt;
+        padding: 20px 20px;
+        background-color: var(--back);
+        border-bottom:1px solid var(--hover) ;
+        border-left:1px solid var(--hover) ;
+        border-right:1px solid var(--hover) ;
+
+        li{
+          margin-top: -10px;
+          padding: 5px 0px;
+          text-align: center;
+        }
+      }
+      }
+
+    }
+    @include mixin.respond-to('large'){
+      &-btn{
+        display: none;
+      }
+  }
+    &-logo{
+        a{
+            font-size: 24pt;
+            color: var(--hover);
+        }
+    }
+    &-menu{
+        @include mixin.flex-center;
+        a,li{
+            font-size: 18pt;
+            padding: 4px 6px;
+            transition: all 0.8s ease;
+            &:hover{
+                color: var(--hover);
+            }
+        }
+    }
+  }
+  //toggle-menu
+  #hidden,#show{
+  color: var(--hover);
+  cursor: pointer;
+  font-size: 30px;}
