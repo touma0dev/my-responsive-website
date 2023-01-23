@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+li, a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--font);
+}
+
+:root {
+  --font:#fff;
+  --background: rgb(255, 102, 0);
+  --hover:rgb(0, 0, 0);
+}
+
+.header {
+  border-bottom: 1px solid black;
+}
+@media (max-width: 10000px) {
+  .header .header-smart {
+    display: none;
+  }
+}
+@media (max-width: 529px) {
+  .header .header-menu {
+    display: none;
+  }
+  .header .header-smart {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 60px;
+    left: 40px;
+    cursor: pointer;
+    position: relative;
+  }
+  .header .header-smart-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    width: 60px;
+    left: -40px;
+    background-color: var(--background);
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .header .header-smart-menu a:hover {
+    color: var(--hover) !important;
+    transition: 1s all ease;
+    -webkit-text-decoration: underline var(--hover);
+            text-decoration: underline var(--hover);
+  }
+}
+.header-logo a {
+  color: var(--hover);
+}
+.header-logo span {
+  color: var(--font);
+}
+.header-navbar {
+  justify-content: space-around;
+  display: flex;
+  background-color: var(--background);
+}
+.header-menu {
+  display: flex;
+  padding: 11px 13px;
+}
+.header-menu a {
+  margin-left: 1rem;
+  transition: 1s ease all;
+  font-size: 13pt;
+}
+.header-menu a:hover {
+  color: var(--hover);
+}
+.header-menu #home a {
+  color: var(--hover) !important;
+}
+.header-menu #home a:hover {
+  color: var(--font) !important;
+}
+
+.slider {
+  background-color: var(--background);
+  justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  filter: blur(1px);
+}
+.slider img {
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: var(--background);
+  justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.container-images {
+  width: 200px;
+  margin: 5pt;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 10px;
+}
+.container-images H1 {
+  text-align: center;
+}
+.container-images img {
+  width: 200px;
+}/*# sourceMappingURL=style.css.map */

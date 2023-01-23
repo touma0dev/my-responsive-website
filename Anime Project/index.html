@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>SuperNova</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-navbar">
+            <h1 class="header-logo"><a href="" >Super<span>Nova</span></a></h1>
+            
+            <ul class="header-menu">
+                <li id="home"><a href="">Home</a></li>
+                <li><a href="">Lista</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+            <div  class="header-smart">
+                <i class="fa-solid fa-bars"></i>
+                <div class="header-smart-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Lista</a></li>
+                    <li><a href="">Account</a></li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slider">
+        <img src="/images/tree-576863_960_720.png" alt="">
+    </div>
+    <div class="container">
+        <div class="container-images">
+            <h1>Tittle Big Title</h1>
+
+            <img src="/images/image 1.webp" alt="" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia magni quam laudantium reiciendis, quos vitae fugit nam impedit, nemo corporis beatae autem maxime minus adipisci quis, a ipsa nihil magnam?</p>
+        </div>
+        <div class="container-images">
+            <h1>Tittle Small</h1>
+            <img src="/images/image 1.webp" alt="" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia magni quam laudantium reiciendis, quos vitae fugit nam impedit, nemo corporis beatae autem maxime minus adipisci quis, a ipsa nihil magnam?</p>
+        </div>
+        <div class="container-images">
+            <h1>Tittle Medium Title</h1>
+
+            <img src="/images/image 1.webp" alt="" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia magni quam laudantium reiciendis, quos vitae fugit nam impedit, nemo corporis beatae autem maxime minus adipisci quis, a ipsa nihil magnam?</p>
+        </div>
+
+        <div class="container-images">
+            <h1>Tittle Big Blaster Title You never see </h1>
+
+            <img src="/images/image 1.webp" alt="" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia magni quam laudantium reiciendis, quos vitae fugit nam impedit, nemo corporis beatae autem maxime minus adipisci quis, a ipsa nihil magnam?</p>
+        </div>
+        <div class="container-images">
+            <h1>Tittle</h1>
+            <img src="/images/image 1.webp" alt="" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia magni quam laudantium reiciendis, quos vitae fugit nam impedit, nemo corporis beatae autem maxime minus adipisci quis, a ipsa nihil magnam?</p>
+        </div>
+    </div>
+    <script>
+        $('.header-smart').click(()=>{
+            var menu=$(".header-smart-menu")
+            var close=$(".header-smart")
+            if(menu.css('display')==='none'){
+                menu.css('display','block')
+                
+            }else if(menu.css('display')==='block'){
+                menu.css('display','none')
+            }
+        })
+    </script>
+</body>
+</html>
